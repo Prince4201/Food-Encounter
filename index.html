@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Encounter - Online Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Food Encounter.png" type="image/jpeg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Food Encounter.png" alter="logo" height="50px" width="50px" style="border-radius: 9px; ;">Food Encounter</div>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="openCart()">Cart (<span id="cart-count">0</span>)</a></li>
+
+            
+            
+        </ul>
+    </nav>
+    <!-- onclick="scrollToMenu()" class="order-now-btn" -->
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Food Encounter</h1>
+        <p>Discover our wide range of delicious dishes and order now!</p>
+        <button onclick="scrollToMenu()" class="order-now-btn">Order Now</button>
+
+        <!-- <a href="order.html" class="order-now-btn">Order Now</a> -->
+    </section>
+
+    <!-- Specials Section -->
+    <section class="specials" id="menu">
+        <h2>Today’s Specials</h2>
+        <div class="product-container">
+            <!-- Example Product Items -->
+            <div class="product" onclick="addToCart('Pasta', 129)">
+                <img src="pasta.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Delightful Italian pasta with fresh ingredients.</p>
+                <span class="price">Rs129</span>
+            </div>
+            <div class="product" onclick="addToCart('Burger', 99)">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>burger with cheese and lettuce.</p>
+                <span class="price">Rs99</span>
+            </div>
+            <div class="product" onclick="addToCart('Veg. Rolls', 79)">
+                <img src="food3.jpg" alt="Burger">
+                <h3>Veg. Rolls</h3>
+                <p>Our veg rolls are a work of art, carefully crafted with the freshest ingredients.</p>
+                <span class="price">Rs79</span>
+            </div>
+            <div class="product" onclick="addToCart('Risotto', 99)">
+                <img src="food4.jpeg" alt="Burger">
+                <h3>Risotto</h3>
+                <p>rich and creamy with al dente rice.</p>
+                <span class="price">Rs99</span>
+            </div>
+            <div class="product" onclick="addToCart('Aloo Tikki Chaat', 59)">
+                <img src="food5.jpg" alt="Burger">
+                <h3>Aloo Tikki Chaat</h3>
+                <p>Share a customer testimonial, such as "I just had the most amazing Aloo.</p>
+                <span class="price">Rs59</span>
+            </div>
+            <div class="product" onclick="addToCart('Momo`s',69)">
+                <img src="food6.jpg" alt="Burger">
+                <h3>Momo's</h3>
+                <p>Treat yourself to a momo so good, it'll make you fall in love all over again.</p>
+                <span class="price">Rs69</span>
+            </div>
+            <div class="product" onclick="addToCart('Fresh Sushi', 149)">
+                <img src="food7.jpg" alt="Burger">
+                <h3>Fresh Sushi</h3>
+                <p>a balanced diet is a sushi roll in each hand.</p>
+                <span class="price">Rs149</span>
+            </div>
+            <div class="product" onclick="addToCart('Decadent Dessert', 79)">
+                <img src="food8.jpg" alt="Burger">
+                <h3>Decadent Dessert</h3>
+                <p>Serving up some sweet happiness.</p>
+                <span class="price">Rs79</span>
+            </div>
+            <div class="product" onclick="addToCart('Cocktail', 99)">
+                <img src="food9.jpg" alt="Burger">
+                <h3>Cocktail</h3>
+                <p>Refreshing cocktails crafted by our expert mixologists.</p>
+                <span class="price">Rs99</span>
+            </div>
+            <div class="product" onclick="addToCart('Veg. Soup', 89)">
+                <img src="food10.jpg" alt="Burger">
+                <h3>Veg. Soup</h3>
+                <p>Slurp your way to happiness with a warm bowl of soup.</p>
+                <span class="price">Rs89</span>
+            </div>
+            <div class="product" onclick="addToCart('Coffee', 49)">
+                <img src="food11.jpg" alt="Burger">
+                <h3>Coffee</h3>
+                <p>Enjoy our freshly brewed coffee, perfect for any time of day.</p>
+                <span class="price">Rs49</span>
+            </div>
+            <div class="product" onclick="addToCart('Icecream', 59)">
+                <img src="food12.jpg" alt="Burger">
+                <h3>Icecream</h3>
+                <p>Our Ice Cream is Divine, Taste the Flavors that Rhyme.</p>
+                <span class="price">Rs59</span>
+            </div>
+            <div class="product" onclick="addToCart('Friedrice', 139)">
+                <img src="food13.jpg" alt="Burger">
+                <h3>Friedrice</h3>
+                <p>Fried rice is a delicious, adaptable, and filling food. It gets a boost of fresh flavour.</p>
+                <span class="price">Rs139</span>
+            </div>
+            <div class="product" onclick="addToCart('Pizza', 129)">
+                <img src="food14.jpg" alt="Burger">
+                <h3>Pizza</h3>
+                <p>It taste chewy and crisp, with marinara sauce and cheese.</p>
+                <span class="price">Rs129</span>
+            </div>
+            <div class="product" onclick="addToCart('Coke', 49)">
+                <img src="food15.jpeg" alt="Burger">
+                <h3>Coke</h3>
+                <p>“Taste the Feeling”</p>
+                <span class="price">Rs49</span>
+            </div>
+
+            <!-- Add more product items here -->
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="offers-section">
+        <h2>Special Offers</h2>
+        <div class="offers-container">
+            <div class="offer">
+                <h3>Buy One Get One Free on Burgers!</h3>
+                <p>Order any burger and get another one free. Offer valid only on Sundays.</p>
+            </div>
+            <div class="offer">
+                <h3>20% off on Orders Above Rs299</h3>
+                <p>Use code FOODEncounter20 at checkout to avail the discount. Valid all month.</p>
+            </div>
+            <div class="offer">
+                <h3>Happy Hour</h3>
+                <p>Get 50% off on all beverages between 9 PM and 11 PM daily.</p>
+            </div>
+            <div class="offer">
+                <h3>Lunch Combo Deal</h3>
+                <p>Enjoy a 25% discount on all lunch combos from 12 PM to 3 PM on weekdays.</p>
+            </div>
+            
+            <div class="offer">
+                <h3>Weekend Special</h3>
+                <p>Order two main courses and get a free dessert, available every Saturday and Sunday.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="dish1.jpg" alt="Dish 1">
+            <img src="dish2.jpg" alt="Dish 2">
+            <img src="dish3.jpg" alt="Dish 3">
+            <img src="dish4.jpg" alt="Dish 4">
+            <img src="dish5.jpg" alt="Dish 5"><br><br>
+            <!-- <img src="dish5.jpg" alt="Dish 5">
+            <img src="dish5.jpg" alt="Dish 5"> -->
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to make a reservation, feel free to get in touch with us.</p>
+        <form id="contactForm" onsubmit="sendMessage(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="name">Email:</label>
+            <input type="email" id="contact-email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: Rs<span id="cart-total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <div class="card_section3">
+   	   	<div class="heading3">
+   		<h1>TESTIMONIAL</h1>
+   	</div>
+   	<div class="box8">
+   		<div class="box8content">
+   		 <h4>Prince Jaiswal</h4><br>
+   		 <p>"As the founder of Food Encounter, my goal has always been to make ordering 
+            delicious food as seamless and enjoyable as possible. We've carefully curated
+             a wide range of menu options, ensuring that whether you're craving comfort food,
+              gourmet flavors, or healthier choices, you'll find something that hits the spot.
+               Our platform prioritizes ease of use, security, and reliability, so every order 
+               is smooth and worry-free. We're here to turn your food cravings into satisfying experiences, 
+               one order at a time."
+         </p>
+
+   			</div>
+            </div><br>
+               <section class="pimg4">
+                <div class="ptext">
+                    <footer>
+                        <div class="footer-container" >
+                          <p>&copy; 2024 Food Encounter. All rights reserved.</p>
+                          
+                        </div>
+                      </footer>
+                      
+        
+                </div>
+                
+            </section><br>
+
+    <script src="script.js"></script>
+</body>
+</html>
